@@ -32,7 +32,7 @@ The backend acts as the system of record for booking operations, exposing an API
 
 ## Core Design Decisions
 
-#### 1. Slot-Based Scheduling Representation
+### 1. Slot-Based Scheduling Representation
 
 Room availability is modelled as discrete time slots, enabling:
 - deterministic conflict detection
@@ -41,7 +41,7 @@ Room availability is modelled as discrete time slots, enabling:
 
 **Trade-off:** Introduces rigidity in time representation, constraining bookings to predefined intervals, and increases write complexity as a single booking may span multiple slots.
 
-#### 2. Dual-Entity Booking Consistency Model
+### 2. Dual-Entity Booking Consistency Model
 
 Bookings are persisted in both:
 - room schedules (availability perspective)
@@ -53,7 +53,7 @@ This trades strict normalisation for:
 
 **Trade-off:** Partial write failures can cause divergence between room availability and user history, requiring application-level compensation to restore consistency.
 
-#### 3. Soft Deletion Strategy
+### 3. Soft Deletion Strategy
 
 Bookings are not fully removed from system history; instead they are flagged to:
 - maintain auditability
@@ -62,7 +62,7 @@ Bookings are not fully removed from system history; instead they are flagged to:
 
 **Trade-off:** Introduces additional storage overhead and increases query complexity, requiring consistent filtering to ensure logically deleted records do not surface in user-facing views.
 
-#### 4. Firestore (NoSQL) as Persistence Layer
+### 4. Firestore (NoSQL) as Persistence Layer
 
 Firestore was selected over a relational database to prioritise:
 - rapid iteration
