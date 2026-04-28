@@ -2,7 +2,7 @@
 
 Backend service for a real-time meeting room booking system, responsible for replacing an email-based allocation process with a structured scheduling API.
 
-**YourSpace Frontend:** https://github.com/dmmkimani/your-space-ui/
+**YourSpace Mobile Client:** https://github.com/dmmkimani/your-space-ui/
 
 ## Problem Context
 
