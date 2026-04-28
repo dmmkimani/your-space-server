@@ -2,7 +2,10 @@
 
 Backend service for a real-time meeting room booking system, responsible for replacing an email-based allocation process with a structured scheduling API.
 
-**YourSpace Mobile Client:** https://github.com/dmmkimani/your-space-ui/
+## Related Resources
+
+- 📱 **YourSpace Mobile Client:** [github.com/dmmkimani/your-space-ui](https://github.com/dmmkimani/your-space-ui)
+- 🌐 **Product-Level Walkthrough:** [dmmkimani.com/your-space](https://dmmkimani.com/projects/your-space)
 
 ## Problem Context
 
@@ -79,8 +82,8 @@ Firestore was selected over a relational database to prioritise:
 ## Technology Stack
 
 **Server:** Dart
-
+<br>
 **Database:** Firebase Firestore (NoSQL)
-
+<br>
 **Architecture:** REST API
 
