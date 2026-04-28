@@ -20,6 +20,10 @@ The system required a unified, actionable booking layer.
 
 The backend acts as the system of record for booking operations, exposing an API for managing room availability and booking lifecycle transitions.
 
+<p align="center">
+  <img src="assets/images/system%20flowchart.PNG" alt="Booking Flow" width="800" />
+</p>
+
 ## Core Design Decisions
 
 #### 1. Slot-Based Scheduling Representation
